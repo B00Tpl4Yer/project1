@@ -1,0 +1,102 @@
+.navbar {
+  background-color: transparent;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar .navbar-brand {
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .sidebar .navbar-nav {
+    padding-top: 20px;
+  }
+
+  .sidebar .nav-link {
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .sidebar .nav-link:hover {
+    background-color: #ddd;
+  }
+
+  .sidebar .nav-link.active {
+    background-color: #ccc;
+    color: #fff;
+  }
+
+  .sidebar .nav-link.disabled {
+    color: #999;
+  }
+
+  @media (max-width: 767.98px) {
+    .sidebar {
+      transform: translateX(-100%);
+      z-index: 9999;
+    }
+
+    .sidebar.active {
+        transform: translateX(-250px);
+      }
+  }.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    transform: translateX(-250px);
+  }
+
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+
+  .toggle-btn {
+    position: absolute;
+    top: 300px;
+    right: -40px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .toggle-btn:hover {
+    background-color: #343a40;
+  }
+
+  body {
+    background-image: url("../img/muzan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
